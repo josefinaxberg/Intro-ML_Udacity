@@ -10,11 +10,14 @@ from tester import dump_classifier_and_data
 ### Task 1: Select what features you'll use.
 ### features_list is a list of strings, each of which is a feature name.
 ### The first feature must be "poi".
-features_list = ['poi','salary', 'bonus', 'total_stock_value', ''] 
+features_list = ['poi','salary', 'bonus', 'total_stock_value', 'from_poi_to_this_person', 'from_this_person_to_poi'] 
 
 ### Load the dictionary containing the dataset
 with open("final_project_dataset.pkl", "r") as data_file:
     data_dict = pickle.load(data_file)
+
+# Explore data
+print len(data_dict.keys())
 
 ### Task 2: Remove outliers
 ### Task 3: Create new feature(s)
