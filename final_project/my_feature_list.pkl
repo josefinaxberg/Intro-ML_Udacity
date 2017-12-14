@@ -11,4 +11,6 @@ aS'loan_advances'
 p5
 aS'total_stock_value'
 p6
+aS'exercised_stock_options'
+p7
 a.
